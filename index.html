@@ -25,56 +25,56 @@
 </head>
 <body class="bg-[#1E1E1E] bg-[url('./images/background.png')] bg-no-repeat bg-center min-h-screen">
     <!-- home section start -->
-    <section class="home hidden  min-h-screen  flex flex-col justify-center">
+    <section id="home-screen" class="min-h-screen  flex flex-col justify-center">
         <div class="flex flex-col justify-center items-center gap-8">
             <h1 class="anton font-normal text-[170px] text-white">ALPHABET CLASH</h1>
             <p class="poppins font-medium text-2xl text-white">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-            <button class="btn w-[175px] poppins text-lg mt-10 poppins">Play Now</button>
+            <button onclick="play()" class="btn w-[175px] poppins text-lg mt-10 poppins">Play Now</button>
         </div>
     </section>
-    <section class="play-ground hidden poppins  min-h-screen flex flex-col justify-center gap-14">
-            
+    <!-- play ground -->
+    <section id="play-ground" class="hidden poppins  min-h-screen flex flex-col justify-center gap-14">            
                 <!-- screen -->
                 <div class="flex justify-center items-center">
                     <div class="artboard artboard-horizontal phone-6 bg-[#FFFFFFB3] border-[18px] border-[#010313CC] rounded-lg flex flex-col items-center gap-14">
                         <p class="bg-[#2F2941] w-fit p-2 rounded-b-md text-white">Don't watch keyboard while playing...</p>
-                        <p class="text-9xl poppins font-semibold text-black">Y</p>
+                        <p id="alphabet-display" class="text-9xl poppins font-semibold text-black uppercase">Y</p>
                     </div>
                 </div>
                 <!-- keyboard -->
-                <div class="flex flex-col gap-2 ">
+                <div class="flex flex-col gap-2">
                     <div class="flex justify-center gap-4 my-1 w-full">
-                        <kbd class="kbd text-xl font-semibold p-5">q</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">w</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">e</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">r</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">t</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">y</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">u</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">i</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">o</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">p</kbd>
+                        <kbd id="q" class="kbd text-xl font-semibold p-5">q</kbd>
+                        <kbd id="w" class="kbd text-xl font-semibold p-5">w</kbd>
+                        <kbd id="e" class="kbd text-xl font-semibold p-5">e</kbd>
+                        <kbd id="r" class="kbd text-xl font-semibold p-5">r</kbd>
+                        <kbd id="t" class="kbd text-xl font-semibold p-5">t</kbd>
+                        <kbd id="y" class="kbd text-xl font-semibold p-5">y</kbd>
+                        <kbd id="u" class="kbd text-xl font-semibold p-5">u</kbd>
+                        <kbd id="i" class="kbd text-xl font-semibold p-5">i</kbd>
+                        <kbd id="o" class="kbd text-xl font-semibold p-5">o</kbd>
+                        <kbd id="p" class="kbd text-xl font-semibold p-5">p</kbd>
                       </div>
                       <div class="flex justify-center gap-4 my-1 w-full">
-                        <kbd class="kbd text-xl font-semibold p-5">a</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">s</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">d</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">f</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">g</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">h</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">j</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">k</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">l</kbd>
+                        <kbd id="a" class="kbd text-xl font-semibold p-5">a</kbd>
+                        <kbd id="s" class="kbd text-xl font-semibold p-5">s</kbd>
+                        <kbd id="d" class="kbd text-xl font-semibold p-5">d</kbd>
+                        <kbd id="f" class="kbd text-xl font-semibold p-5">f</kbd>
+                        <kbd id="g" class="kbd text-xl font-semibold p-5">g</kbd>
+                        <kbd id="h" class="kbd text-xl font-semibold p-5">h</kbd>
+                        <kbd id="j" class="kbd text-xl font-semibold p-5">j</kbd>
+                        <kbd id="k" class="kbd text-xl font-semibold p-5">k</kbd>
+                        <kbd id="l" class="kbd text-xl font-semibold p-5">l</kbd>
                       </div> 
                       <div class="flex justify-center gap-4 my-1 w-full">
-                        <kbd class="kbd text-xl font-semibold p-5">z</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">x</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">c</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">v</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">b</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">n</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">m</kbd>
-                        <kbd class="kbd text-xl font-semibold p-5">/</kbd>
+                        <kbd id="z" class="kbd text-xl font-semibold p-5">z</kbd>
+                        <kbd id="x" class="kbd text-xl font-semibold p-5">x</kbd>
+                        <kbd id="c" class="kbd text-xl font-semibold p-5">c</kbd>
+                        <kbd id="v" class="kbd text-xl font-semibold p-5">v</kbd>
+                        <kbd id="b" class="kbd text-xl font-semibold p-5">b</kbd>
+                        <kbd id="n" class="kbd text-xl font-semibold p-5">n</kbd>
+                        <kbd id="m" class="kbd text-xl font-semibold p-5">m</kbd>
+                        <kbd id="/" class="kbd text-xl font-semibold p-5">/</kbd>
                       </div>
                 </div>
                 <!-- buttons -->
@@ -84,7 +84,8 @@
                 </div>
             
     </section>
-    <section class="score poppins flex justify-center min-h-screen items-center">
+    <!-- score and play again -->
+    <section class="hidden score poppins flex justify-center min-h-screen items-center">
         <div class="max-w-[400px] p-11  rounded-xl flex flex-col items-center gap-4  bg-gradient-to-r from-[#ffffff8f] to-[#98979700]" style="border: 1px solid rgba(255, 255, 255, 0.2);">
             <p class="text-[64px] font-bold text-white">Score : <span>14</span></p>
             <button class="btn px-8 py-2 font-semibold text-2xl">Play Again</button>
@@ -92,5 +93,7 @@
         </div>
 
     </section>
+    <script src="./scripts/utility.js"></script>
+    <script src="./scripts/alpha-clash.js"></script>
 </body>
 </html>
