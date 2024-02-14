@@ -79,16 +79,17 @@
                 </div>
                 <!-- buttons -->
                 <div class="flex justify-around">
-                    <button class="btn bg-[#894189] border-none text-white">Life <img src="./images/Group 23.svg" alt=""><span>1</span></button>
-                    <button class="btn border-none text-white bg-[#360490]">Score <img src="./images/monetization_on.svg" alt=""><span>1</span></button>
+                    <button class="btn bg-[#894189] border-none text-white">Life <img src="./images/Group 23.svg" alt=""><span id="game-life">5</span></button>
+                    <button class="btn border-none text-white bg-[#360490]">Score <img src="./images/monetization_on.svg" alt=""><span id="current-score">0</span></button>
                 </div>
             
     </section>
     <!-- score and play again -->
-    <section class="hidden score poppins flex justify-center min-h-screen items-center">
+    <section id="scoreAndPlay" class="hidden score poppins flex justify-center min-h-screen items-center">
         <div class="max-w-[400px] p-11  rounded-xl flex flex-col items-center gap-4  bg-gradient-to-r from-[#ffffff8f] to-[#98979700]" style="border: 1px solid rgba(255, 255, 255, 0.2);">
-            <p class="text-[64px] font-bold text-white">Score : <span>14</span></p>
-            <button class="btn px-8 py-2 font-semibold text-2xl">Play Again</button>
+            <h2 class="text-3xl font-semibold text-white">Game Over!</h2>
+            <p class="text-[50px] font-bold text-white">Score : <span id="mainScore">0</span></p>
+            <button id="play-again" onclick="playAgain()" class="btn px-8 py-2 font-semibold text-2xl">Play Again</button>
             <p class="text-xl font-medium text-white">Practice will make you Pro</p>
         </div>
 
