@@ -14,6 +14,15 @@ function handleKeyPress(event){
     // console.log(event.key, 'key pressed')
     const playerPressed = event.key 
     // console.log(playerPressed, "playerPressed")
+    if(playerPressed === 'Escape'){
+
+          showElementById('scoreAndPlay')
+          hideElementById('play-ground')
+         const getElement = document.getElementById('mainScore')
+         const getElementText = getElement.innerText
+         const getElementValue = parseInt(getElementText)
+         getElement.innerText = newScore
+    }
 
     // get the expected key to press
     const alphabetDisplay = document.getElementById('alphabet-display')
