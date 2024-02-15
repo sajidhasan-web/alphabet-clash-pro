@@ -65,6 +65,7 @@ function playAgain(){
     showElementById('play-ground')
     setTextElementValueById('game-life', 5)
     setTextElementValueById('current-score', 0)
+    getElementTextById(alphabet)
     continueGame()
 
    

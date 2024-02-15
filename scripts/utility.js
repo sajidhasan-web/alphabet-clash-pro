@@ -16,6 +16,14 @@ function hideElementById(idName) {
       const section = document.getElementById(elementId);
       section.classList.remove("bg-orange-400");
     }
+
+
+    function getElementTextById(elementId){
+        const element = document.getElementById(elementId)
+        const elementText = element.innerText
+        const value = parseInt(elementText)
+        element.innerText = value
+    }
   
   //   Current score
   function currentScore(){
